@@ -1,0 +1,22 @@
+body {
+    background-color:rgb(37, 37, 37);
+    color: slategrey;
+}
+table {
+    background-color: slategray;    
+    color: lightgrey;
+    width: 200px;
+    font-family: system-ui;
+}
+ tbody{
+    text-align: right;
+ }
+ td{
+    border:1px dotted black;
+ }
+input {
+    width: 192px;
+    text-align: right;
+    background-color: lightgray;
+    color: dimgray;
+}
