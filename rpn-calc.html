@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+  <meta charset="utf-8" />
+  <title>RPN-Calc</title>
+  <link rel="stylesheet" href="style-rpn.css" />
+  <style>
+    button {
+      font-size: x-small;
+      height: 2em;
+      width: 3em;
+    }
+  </style>
+</head>
+
+<body>
+<header> <h1>RPN CALC</h1> </header>
+
+<section>
+  <nav class="stack-frame">
+<table id="myTable">
+  <thead>
+      <tr>
+          <th>Stack <hr> </th>
+      </tr>
+  </thead>
+  <tbody id="tableBody">
+  </tbody>
+</table>
+
+<form onsubmit="calculate(); event.preventDefault();">
+    <input type="text" id="expression" 
+      onkeydown="
+      if (event.keyCode === 13) { 
+        eval(calculate);}"
+      autocomplete="off"
+      />
+    <p id="message"></p>
+</form>  
+
+<button title="Sommatoria" onclick="sommatoria()">&#8512;</button>    
+<button title="Potenza" onclick="potenza()">x<sup>y</sup></button>    
+<button title="Inverso" onclick="inverso()">1/x</button>    
+<button title="Cancella un elemento" onclick="cancella_elemento()">d</button>    
+<button title="Cancella la stack" onclick="cancella_stack()">cls</button>    
+<button title="Scambia X e Y" onclick="scambiaxy()">x&#8596;y</button>
+</nav>
+<article class="keyboard-frame">
+<style>
+  .keyboard {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row {
+    display: flex;
+    width: 100%;
+  }
+  .keyboard button {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #333;
+    background-color: #fff;
+  }
+</style>
+
+<div class="keyboard">
+  <div class="row">
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>/</button>
+  </div>
+  <div class="row">
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>*</button>
+  </div>
+  <div class="row">
+    <button>1</button>
+    <button>2</button>  
+    <button>3</button>
+    <button>-</button>
+  </div>
+  <div class="row">
+  <button>0</button>
+  <button>.</button>
+  <button>C</button>
+  <button>+</button>
+  <button>=</button>
+  </div>
+
+  <!-- Add more buttons for the rest of the keyboard -->
+</div>
+</article>
+</section>
+<br><br>
+
+<footer>
+<h2>Notazione polacca inversa</h2>
+
+<p>Definita in Inglese come RPN (Reverse Polish Notation), è una notazione
+che permette di eseguire calcoli complessi con pieno controllo delle precedenze.
+</p>
+
+<p>Se, per esempio devo moltiplicare un numero per una somma di due numeri,
+con una calcolatrice scientifica devo utilizzare le parentesi per
+eseguire la somma prima della moltiplicazione.</p>
+<p> 3*(5+8)</p>
+<p>Con la polacca inversa digiterò: 5 8+ 3*</p>
+<p>Nella nostra calcolatrice digiterò:</p>
+<ul>
+  <li>5 &LessLess; invio &GreaterGreater;</li>
+  <li> 8+&LessLess; invio &GreaterGreater;</li>
+  <li> 3*&LessLess; invio &GreaterGreater;</li>
+</ul>
+</footer>
+<script src="rpn-code.js"></script>
+</body>
+</html>
