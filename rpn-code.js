@@ -198,6 +198,17 @@ keyboard.addEventListener("click", function(event) {
           message("Error");
         }
         break;
+        case "+":
+          output.value += value;
+          try {
+            calculate();
+          } catch (error) {
+            message("Error");
+          };
+          //message('resetting')
+          output.value = "";
+          output.focus();
+          break;
       default:
         output.value += value;
         output.focus()

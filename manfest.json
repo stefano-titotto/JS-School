@@ -1,0 +1,44 @@
+{
+    "short_name": "RPN",
+    "name": "RPN Calc",
+    "icons": [
+      {
+        "src": "/images/rpn_ico_100.png",
+        "type": "image/png",
+        "sizes": "100x100"
+      },
+      {
+        "src": "/images/rpn_ico_512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "/images/rpn_ico_192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "id": "/?source=pwa",
+    "start_url": "/?source=pwa",
+    "background_color": "#87CEFA",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#87CEFA",
+    "shortcuts": [
+   ],
+    "description": "Weather forecast information",
+    "screenshots": [
+      {
+        "src": "/images/screenshot1.png",
+        "type": "image/png",
+        "sizes": "540x720",
+        "form_factor": "narrow"
+      },
+      {
+        "src": "/images/screenshot2.jpg",
+        "type": "image/jpg",
+        "sizes": "720x540",
+        "form_factor": "wide"
+      }
+    ]
+  }

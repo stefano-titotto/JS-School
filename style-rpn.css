@@ -1,12 +1,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color:rgb(37, 37, 37);
-    color: slategrey;
+    background-color: #87cefa;
+    color: black;
 }
 table {
     text-align: center;
-    background-color: slategray;    
-    color: lightgrey;
+    background-color: lightblue;    
+    color: black;
     width: 200px;
     font-family: system-ui;
 }
