@@ -23,8 +23,8 @@
         "sizes": "192x192"
       }
     ],
-    "id": "/?source=pwa",
-    "start_url": "/JS-School/",
+    "id": "/JS-School",
+    "start_url": "/JS-School",
     "background_color": "#87CEFA",
     "display": "standalone",
     "scope": "/",
