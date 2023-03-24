@@ -26,6 +26,7 @@
     "id": "rpn-calc",
     "start_url": "https://stefano-titotto.github.io/JS-School/",
     "background_color": "#87CEFA",
+    "display_override": ["window-control-overlay", "minimal-ui"],
     "display": "standalone",
     "scope": "/",
     "theme_color": "#87CEFA",
