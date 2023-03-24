@@ -23,10 +23,9 @@
         "sizes": "192x192"
       }
     ],
-    "id": "rpn-calc",
-    "start_url": "/",
+    "id": "/?source=pwa",
+    "start_url": "/?source=pwa",
     "background_color": "#87CEFA",
-    "display_override": ["window-control-overlay", "minimal-ui"],
     "display": "standalone",
     "scope": "/",
     "theme_color": "#87CEFA",
