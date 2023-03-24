@@ -23,8 +23,8 @@
         "sizes": "192x192"
       }
     ],
-    "id": "/?source=pwa",
-    "start_url": "/?source=pwa",
+    "id": "rpn-calc",
+    "start_url": "https://stefano-titotto.github.io/JS-School/",
     "background_color": "#87CEFA",
     "display": "standalone",
     "scope": "/",
