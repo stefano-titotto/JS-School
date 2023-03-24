@@ -8,7 +8,7 @@
         "sizes": "16x16"
       },
       {
-        "src": "images/rpn_ico_100.png",
+        "src": "images/rpn_100.png",
         "type": "image/png",
         "sizes": "100x100"
       },
@@ -24,12 +24,12 @@
       }
     ],
     "id": "/?source=pwa",
-    "start_url": "/?source=pwa",
+    "start_url": "/JS-School/",
     "background_color": "#87CEFA",
     "display": "standalone",
     "scope": "/",
     "theme_color": "#87CEFA",
     "shortcuts": [
    ],
-    "description": "Weather forecast information"
+    "description": ""
   }
