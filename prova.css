@@ -1,0 +1,35 @@
+:root{
+    --bottone-l: 10vh;
+    --linea-c: grey;
+    --linea-s: dotted;
+}
+.parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  
+    /* Just for parent demo size */
+    height: 100vh;
+  }
+
+div {
+    border: 1px var(--linea-s) var(--linea-c);
+}
+.yellow-box {
+    background: lightgoldenrodyellow;
+    padding: 0.25 rem;
+}
+
+.blue-box {
+    background: lightsteelblue;    
+    padding: 0.25 rem;
+}
+.coral-box {
+    background: lightcoral;    
+    padding: 0.25 rem;
+}
+.bottone {
+    width: var(--bottone-l);
+    float: left;
+    height: var(--bottone-l);
+    text-align: center;
+}

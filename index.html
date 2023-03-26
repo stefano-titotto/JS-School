@@ -8,92 +8,72 @@
   <link rel="icon" type="image/x-icon" href="images/rpn_16.png">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="style-rpn.css" />
-  <style>
-    button {
-      font-size: x-small;
-      height: 2em;
-      width: 3em;
-    }
-  </style>
+
   <script src="register-sw.js"></script>
 </head>
 
 <body>
+<div class="schermata">
 <header>RPN-CALC</header>
-<article nav class="stack-frame">
-<table id="myTable">
-  <tbody id="tableBody">
-  </tbody>
-</table>
+<main>
+  <article nav class="stack-frame">
+  <table id="myTable">
+    <tbody id="tableBody">
+    </tbody>
+  </table>
 
-<form onsubmit="calculate(); event.preventDefault();">
-    <input type="text" id="expression" 
-      onkeydown="
-      if (event.keyCode === 13) { 
-        eval(calculate);}"
-      autocomplete="off"
-      />
-    <p id="message"></p>
-</form>  
+  <form onsubmit="calculate(); event.preventDefault();">
+      <input type="text" id="expression" 
+        onkeydown="
+        if (event.keyCode === 13) { 
+          eval(calculate);}"
+        autocomplete="off"
+        />
+  </form>  
+  </article>
+  <article class="keyboard-frame">
+    <button title="Sommatoria" onclick="sommatoria()">&#8512;</button>    
+    <button title="Potenza" onclick="potenza()">x<sup>y</sup></button>    
+    <button title="Inverso" onclick="inverso()">1/x</button>    
+    <button title="Cancella un elemento" onclick="cancella_elemento()">d</button>    
+    <button title="Cancella la stack" onclick="cancella_stack()">cls</button>    
+    <button title="Scambia X e Y" onclick="scambiaxy()">x&#8596;y</button>
+  
+    <div class="keyboard">
+      <div class="row">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>/</button>
+      </div>
+      <div class="row">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>*</button>
+      </div>
+      <div class="row">
+        <button>1</button>
+        <button>2</button>  
+        <button>3</button>
+        <button>-</button>
+      </div>
+      <div class="row">
+      <button>0</button>
+      <button>.</button>
+      <button>C</button>
+      <button>+</button>
+      <button>=</button>
+      </div>
 
-<button title="Sommatoria" onclick="sommatoria()">&#8512;</button>    
-<button title="Potenza" onclick="potenza()">x<sup>y</sup></button>    
-<button title="Inverso" onclick="inverso()">1/x</button>    
-<button title="Cancella un elemento" onclick="cancella_elemento()">d</button>    
-<button title="Cancella la stack" onclick="cancella_stack()">cls</button>    
-<button title="Scambia X e Y" onclick="scambiaxy()">x&#8596;y</button>
-</article>
-<side class="keyboard-frame">
-<style>
-  .keyboard {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .row {
-    display: flex;
-    width: 100%;
-  }
-  .keyboard button {
-    width: 60px;
-    height: 60px;
-    border: 1px solid #333;
-    background-color: #fff;
-  }
-</style>
-
-<div class="keyboard">
-  <div class="row">
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>/</button>
-  </div>
-  <div class="row">
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>*</button>
-  </div>
-  <div class="row">
-    <button>1</button>
-    <button>2</button>  
-    <button>3</button>
-    <button>-</button>
-  </div>
-  <div class="row">
-  <button>0</button>
-  <button>.</button>
-  <button>C</button>
-  <button>+</button>
-  <button>=</button>
-  </div>
-
-  <!-- Add more buttons for the rest of the keyboard -->
+      <!-- Add more buttons for the rest of the keyboard -->
+    </div>
+  </article>
+</main>
+<footer background="yellow">
+  <p id="message"></p>
+</footer>
 </div>
-</side>
-
-<br><br>
-
 <script src="rpn-code.js"></script>
 </body>
 </html>

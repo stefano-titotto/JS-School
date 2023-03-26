@@ -10,10 +10,10 @@ table {
     width: 200px;
     font-family: system-ui;
 }
- tbody{
+tbody{
     text-align: right;
- }
- td{
+}
+td{
     text-align: right;
     border:1px dotted black;
 }
@@ -26,15 +26,40 @@ input {
 footer {
     text-align: left;
 }
+
+button {
+    font-size: x-small;
+    height: 2em;
+    width: 3em;
+}
+
 .main-frame {
     max-width: 1000px;
     border: 5px outset red;
     background-color: lightblue;
     text-align: center;
   }
-.stack-frame{
+
+/* .stack-frame{
     float: left;
 }
+
 .keyboard-frame{
     float: left;
 }
+*/
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row {
+    display: flex;
+    width: 100%;
+  }
+
+  .keyboard button {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #333;
+    background-color: #fff;
+  }
