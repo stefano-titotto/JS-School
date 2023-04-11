@@ -34,8 +34,8 @@ button {
 }
 
 .main-frame {
-    max-width: 1000px;
-    border: 5px outset red;
+    max-width: 500px;
+    border: 5px outset darkblue;
     background-color: lightblue;
     text-align: center;
   }

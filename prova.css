@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 :root{
     --bottone-l: 10vh;
     --linea-c: grey;
@@ -9,6 +13,7 @@
   
     /* Just for parent demo size */
     height: 100vh;
+    min-height: 15cm;
   }
 
 div {

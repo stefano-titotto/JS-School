@@ -76,21 +76,6 @@ function calculate() {
   expression.value = "" ;
   stack_print();
 }
-/*
-function stack_print() {
-  let list = [ "c0", "c1", "c2", "c3"];
-  let celle = [];
-  const max_rows = 4
-  for (let idc of list) { 
-    celle.push( document.getElementById(idc))
-  };
-
-  mr = Math.min(stack.length, max_rows);
-  for (let i = 0; i < mr; i++){
-    celle[i].innerHTML = stack[i]
-  }
-}
-*/
 
 function stack_print(){
   var TableBody = document.getElementById("tableBody");
@@ -183,10 +168,11 @@ function scambiaxy(){
 const keyboard = document.querySelector(".keyboard");
 const output = document.getElementById("expression");
 
+/* Legge il valore del bottone che è stato cliccato */
 keyboard.addEventListener("click", function(event) {
   if (event.target.tagName === "BUTTON") {
     const value = event.target.textContent;
-    message(value)
+    //message(value)
     switch (value) {
       case "C":
         output.value = "";
