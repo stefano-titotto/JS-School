@@ -165,14 +165,14 @@ function scambiaxy(){
   stack_print();
 }
 
-const keyboard = document.querySelector(".keyboard");
+const keyboard = document.querySelector(".keyboard-frame");
 const output = document.getElementById("expression");
 
 /* Legge il valore del bottone che è stato cliccato */
 keyboard.addEventListener("click", function(event) {
   if (event.target.tagName === "BUTTON") {
     const value = event.target.textContent;
-    //message(value)
+    // Seleziona i bottoni 
     switch (value) {
       case "C":
         output.value = "";
